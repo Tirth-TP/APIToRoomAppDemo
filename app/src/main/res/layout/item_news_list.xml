@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_poster"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_poster"
+            tools:text="author dhdhdhg rghdfh hfgdhfvcb  gfjfnfjfjhgjghjghkghkgkghkghjkghjghjghfg hdfg  df gd g df g df gdf hfgjh fghfg h  fg h fgh fgh" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="5dp"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            tools:text="author" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_published_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="5dp"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toEndOf="@id/txt_author"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            tools:text="author"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
