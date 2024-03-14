@@ -18,7 +18,7 @@ data class NewsArticle(
     val title: String?,
     val url: String?,
     val urlToImage: String?,
-) {
+) /*{
     // Empty constructor
     constructor() : this(0, "", "", "", "", "", "", "")
-}
+}  //No need */

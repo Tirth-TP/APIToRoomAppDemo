@@ -46,7 +46,6 @@ class NewsRepository @Inject constructor(
                 )
             }
             val newsDao = newsDatabase.newsDao()
-
             if (newsDao.getNews().isEmpty()) {
                 newsArticles?.let {
                     newsDao.addNews(it)
@@ -56,7 +55,6 @@ class NewsRepository @Inject constructor(
             val newsArticle = newsDatabase.newsDao().getNews()
             _newsList.postValue(newsArticle)
 
-//            _newsList.postValue(result.body())
 
         } catch (e: Exception) {
             println("Issue : $e ")

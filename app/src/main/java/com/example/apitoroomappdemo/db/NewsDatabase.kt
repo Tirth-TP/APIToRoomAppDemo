@@ -20,8 +20,11 @@ abstract class NewsDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: NewsDatabase? = null
 
+        //There is no user of this code this is not reachable.
+        //We are providing database instance from DbModule object.
         fun getDatabase(context: Context): NewsDatabase {
-            if (INSTANCE != null) {
+            //If instance is null then create
+            if (INSTANCE == null) {
                 synchronized(this) {
                     INSTANCE = Room.databaseBuilder(
                         context,
